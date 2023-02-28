@@ -1,16 +1,14 @@
-﻿<Window x:Class="TRPO_practice.MainWindow"
+﻿<Window x:Class="TRPO_practice.View.Autorization"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:TRPO_practice"
+        xmlns:local="clr-namespace:TRPO_practice.View"
         mc:Ignorable="d"
-        Title="MainWindow" Height="600" Width="800">
+        WindowStartupLocation="CenterScreen"
+        Title="Autorization" Height="450" Width="450">
     <Grid>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition/>
-            <ColumnDefinition/>
-            <ColumnDefinition/>
             <ColumnDefinition/>
             <ColumnDefinition/>
             <ColumnDefinition/>
@@ -26,5 +24,20 @@
             <RowDefinition/>
             <RowDefinition/>
         </Grid.RowDefinitions>
+
+        <Border Grid.Column="1"
+                Grid.Row="2"
+                Grid.RowSpan="2"
+                Grid.ColumnSpan="2"
+                BorderThickness="2"
+                BorderBrush="Black"/>
+        <Border Grid.ColumnSpan="4"
+                BorderBrush="#FFF76767"
+                BorderThickness="3"/>
+        <Border Grid.ColumnSpan="4"
+                Grid.RowSpan="2"
+                Grid.Row="5"
+                BorderBrush="BlueViolet"
+                BorderThickness="2"/>
     </Grid>
 </Window>
